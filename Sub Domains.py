@@ -4,7 +4,7 @@ import socket
 import requests
 import threading
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 3:
 	sys.exit("Usage: {} <Target> <Threads> <List>".format(sys.argv[0]))
 
 target = sys.argv[1]
