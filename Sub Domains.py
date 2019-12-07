@@ -18,7 +18,7 @@ def get_route(ip):
 	return r.text
 
 def get_hostname(ip):
-	r = requests.get("http://r.0xy.me/" + ip + "/hostname")
+	r = requests.get("http://r.0xy.me/" + ip + "")
 	result = json.loads(r.text)
 
 	return result["hostname"]
